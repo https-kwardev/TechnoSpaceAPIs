@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9b5SlOuWzSQBl8TDVvR47LwxyQFMLaKl/g6gY7bjRwY=",
+  "Hash": "5QMEmmzZAklUum0Be7CDtaxtpC+BVWZoSh8bVBl1Q5k=",
   "Source": "TechnoSpaceAPIs",
   "BasePath": "_content/TechnoSpaceAPIs",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\TechnoSpaceAPIs\\wwwroot\\index.html",
+      "SourceId": "TechnoSpaceAPIs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\TechnoSpaceAPIs\\wwwroot\\",
+      "BasePath": "_content/TechnoSpaceAPIs",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\TechnoSpaceAPIs\\wwwroot\\js\\site.js",

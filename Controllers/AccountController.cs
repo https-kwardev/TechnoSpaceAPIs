@@ -16,7 +16,6 @@ namespace TechnoSpaceAPIs.Controllers
             return Challenge(new AuthenticationProperties { RedirectUri = Url.Action("GoogleCallback") }, "Google");
         }
 
-        // Handle Google authentication callback
         [Route("google-callback")]
         public async Task<IActionResult> GoogleCallback()
         {
@@ -30,9 +29,7 @@ namespace TechnoSpaceAPIs.Controllers
             var name = result.Principal.FindFirst(ClaimTypes.Name)?.Value;
             var surname = result.Principal.FindFirst(ClaimTypes.Surname)?.Value;
 
-            // You can now store this data in the session, generate a token, etc.
 
-            // Redirect back to the .NET Framework app with user data
             return Redirect($"https://localhost:44394/WebForm1?email={email}&name={name}&surname={surname}");
         }
     }

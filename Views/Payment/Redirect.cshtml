@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null; // No layout for this view
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Form</title>
+    <style>
+        /* Center the form */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        /* Style the submit button */
+        .submit-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://secure.paygate.co.za/payweb3/process.trans" method="POST">
+        <input type="hidden" name="PAY_REQUEST_ID" value="@ViewBag.PayRequestId">
+        <input type="hidden" name="CHECKSUM" value="@ViewBag.Checksum">
+        <input type="submit" value="Proceed To Payment" class="submit-button">
+    </form>
+</body>
+</html>
